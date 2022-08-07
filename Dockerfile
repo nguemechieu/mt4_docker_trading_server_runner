@@ -1,6 +1,6 @@
 FROM ubuntu:latest 
-RUN apt upgrate 
-RUN apt update
+RUN apt upgrade -y
+RUN apt update -y
 RUN echo lscpu
 RUN apt install wine64
 
