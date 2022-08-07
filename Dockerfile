@@ -1,4 +1,5 @@
 FROM ubuntu:latest 
+RUN apt upgrate -y && apt update -y
 
 RUN  dpkg --add-architecture i386
 RUN wget -qO - https://dl.winehq.org/wine-builds/winehq.key | apt-key add -
